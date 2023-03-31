@@ -1,0 +1,11 @@
+<button (click)="getName('hello')">Call Function</button>
+
+<input type="text" #box  name="name" placeholder="Enter Name"/>
+
+<button (click)="printName(box.value)">CLick me</button>
+<h2>{{displayval}}</h2>
+
+<input type="text" (keyup)="getData(box.value)" name="name" placeholder="Enter Name"/>
+<input type="text" (keydown)="getData(box.value)" name="name" placeholder="Enter Name"/>
+<input type="text" (blur)="getData(box.value)" name="name" placeholder="Enter Name"/>
+<input type="text" (input)="getData(box.value)" name="name" placeholder="Enter Name"/>

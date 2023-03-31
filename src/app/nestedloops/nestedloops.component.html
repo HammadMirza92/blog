@@ -1,0 +1,12 @@
+
+
+<ul *ngFor="let item of userDetail">
+    <li>user Name : {{item.name}} </li>
+    <li>Vacancies : {{item.vacancy}} </li>
+    <li *ngFor="let account of item.MediaAccounts">
+        Social Account 1 : {{account.account1}}  <br>
+        Social Account 2 : {{account.account2}}  <br>
+        Social Account 3 : {{account.account3}}  <br>
+        Social Account 4 : {{account.account4}}  <br>
+    </li>
+</ul>

@@ -1,0 +1,29 @@
+
+<h1 *ngIf="h1Show">
+    Hello worlds H1 tag
+</h1>
+
+
+<h1 *ngIf="condition == 'yes'; then IfConditionBlock else elseConditionBlock"></h1>
+<ng-template #IfConditionBlock>
+    <h1>Condition is Yes</h1>
+</ng-template>
+<ng-template #elseConditionBlock>
+    <h1>Condition is No</h1>
+</ng-template>
+
+
+<button (click)="showingBloc(showBlock)" >Show or Hide</button>
+
+<span  *ngIf="showBlock; then IfBlock else elseBlock"></span>
+<ng-template #IfBlock>
+    <h1>If condition</h1>
+</ng-template>
+<ng-template #elseBlock>
+    <h1>Else condition</h1>
+</ng-template>
+
+
+<ng-template [ngIf]="showColor === 'not'">
+    <h1>Condition True</h1>
+</ng-template>
